@@ -1,0 +1,21 @@
+.highscores-page {
+  color: yellow;
+  background-image: url(/assets/space.jpg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newgame-btn {
+  background: transparent;
+  color: yellow;
+  font-size: 2em;
+}
+
+.highscores-btn {
+  color: yellow;
+  background:transparent;
+  font-size:1.5em;
+  font-weight: bold;
+}

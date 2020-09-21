@@ -1,0 +1,44 @@
+.game-page {
+  background-image: url(/assets/space.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100vh;
+  overflow:none;
+}
+
+h1 {
+  margin: 0;
+}
+
+.planet-card {
+  color: yellow;
+}
+
+.greeting-msg {
+  color:yellow;
+  margin:1em;
+}
+
+.planet-img {
+  height:15em;
+}
+
+.answer {
+  color:yellow;
+}
+
+.answer-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.next-question {
+  background: transparent;
+  color: yellow;
+  font-size: 1.5em;
+}

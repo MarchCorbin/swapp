@@ -1,0 +1,48 @@
+.username-input {
+  width: 18em;
+  font-size:2em;
+}
+
+.home-background {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url(/assets/jarjar.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.error-display {
+  font-size: 1.56em;
+  color: white;
+  margin: 0;
+}
+
+.starwars-logo {
+  height: 25em;
+}
+
+.title-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:black;
+  color: yellow;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.start-btn {
+  font-size:2em;
+  color:yellow;
+  background:black;
+  border:2px solid yellow;
+}
