@@ -1,5 +1,5 @@
 import React from 'react';
-import {screen, render, waitFor, fireEvent} from '@testing-library/react'
+import {screen, render} from '@testing-library/react'
 import '@testing-library/jest-dom'
 import {BrowserRouter} from 'react-router-dom'
 import MoviePick from './MoviePick.js'

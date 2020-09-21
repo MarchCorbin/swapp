@@ -1,10 +1,10 @@
 import React from 'react';
-import {screen, render, waitFor, fireEvent} from '@testing-library/react'
+import {screen, render} from '@testing-library/react'
 import '@testing-library/jest-dom'
 import {BrowserRouter} from 'react-router-dom'
 import Game from './Game.js'
 import {getAllPlanets, getSecondSet} from '../../FetchCalls.js'
-import {mockPlanets, singlePlanet, mockFetch, mockFetch2} from '../../MockData.js'
+import {mockFetch, mockFetch2} from '../../MockData.js'
 jest.mock('../../FetchCalls.js')
 
 describe('Game', () => {

@@ -29,18 +29,17 @@ class Home extends React.Component {
     return (
     <div className='home-background'>
       <div className='title-holder'>
-      <img className='starwars-logo' src='/assets/starwarslogo.png' alt='star wars logo' /><h1 className='app-title'>Galactic Cinematic Composition</h1>
+       <img className='starwars-logo' src='/assets/starwarslogo.png' alt='star wars logo' /><h1 className='app-title'>Galactic Cinematic Composition</h1>
       </div>
-      <input name='username' className="username-input" alt='username' type="text" placeholder="Enter Your Desired Username Padawan!" value={this.state.username} onChange={this.handleChange} />
-  {this.state.isValid === false && <h5 className='error-display'>{this.state.error}</h5>}
+      <input name='username' className="username-input" alt='username'            type="text" placeholder="Enter Your Desired Username Padawan!" value={this.state.username} onChange={this.handleChange} />
+      {this.state.isValid === false && <h5 className='error-display'>{this.state.error}</h5>}
       <button className="start-btn" onClick={this.handleSubmit}>Begin!</button>
-  {this.state.isValid && <Redirect to='/game' /> }
+      {this.state.isValid && <Redirect to='/game' /> }
     </div>)
   }
 }
 
 export default Home
-
 
 Home.propTypes = {
   setCurrentUser: PropTypes.func
