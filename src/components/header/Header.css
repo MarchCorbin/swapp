@@ -1,0 +1,21 @@
+.header {
+  background-image: url(/assets/space.jpg);
+  color: yellow;
+  justify-content: space-around;
+  display: flex;
+}
+
+.instructions-btn {
+  color: yellow;
+  border-radius: 1.5em;
+  height: 3em;
+  width: 3em;
+  background: transparent;
+  font-weight: 900;
+  font-size: 1em;
+  border: 2px solid yellow;
+}
+
+.active-text {
+  width: 25em;
+}

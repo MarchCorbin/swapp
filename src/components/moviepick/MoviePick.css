@@ -1,0 +1,31 @@
+.movie-img {
+  height: 15em;
+  display:flex;
+  pointer-events: none;
+}
+
+.movie-picker {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.movie-choice {
+  background: transparent;
+}
+
+.active {
+  background:cyan;
+}
+
+.submit {
+  background: transparent;
+  color: yellow;
+  border: 2px solid yellow;
+  font-size: 2em;
+}
+
+.clear-btn {
+  box-shadow: inset -2px 1px 20px 12px red;
+  font-size: 1em;
+  font-weight: 700;
+}
