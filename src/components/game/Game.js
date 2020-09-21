@@ -104,14 +104,3 @@ checkAnswer: PropTypes.func,
 setCurrentPlanet: PropTypes.func,
 setGuessed: PropTypes.func
 }
-
-
-//             username={this.state.currentUser} 
-//             presentDirections={this.presentDirections}
-//             score={this.state.score}
-//             round={this.state.round}
-//             resetCorrect={this.resetCorrect}
-//             finalAnswer={this.state.correct}
-//             checkAnswer={this.checkAnswer}
-//             setCurrentPlanet={this.setCurrentPlanet}  
-//             setGuessed={this.setGuessed}

@@ -1,5 +1,6 @@
 import React from 'react';
 import './ScoreBoard.css'
+import PropTypes from 'prop-types'
 
 function ScoreBoard(props) {
   return(
@@ -11,3 +12,8 @@ function ScoreBoard(props) {
 }
 
 export default ScoreBoard
+
+ScoreBoard.propTypes = {
+  score: PropTypes.number,
+  round: PropTypes.number
+}

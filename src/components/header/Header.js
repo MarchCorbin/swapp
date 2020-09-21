@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css'
 import {Link} from 'react-router-dom'
+import PropTypes from 'prop-types';
 
 function Header(props){
   let directions = document.querySelector('.directional-text')
@@ -16,3 +17,8 @@ return (
 }
 
 export default Header;
+
+Header.propTypes = {
+  presentDirections: PropTypes.func,
+  username: PropTypes.string
+}

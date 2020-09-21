@@ -1,5 +1,6 @@
 import React from 'react';
 import './MoviePick.css'
+import PropTypes from 'prop-types'
 
 class MoviePicker extends React.Component {
   constructor(props) {
@@ -110,3 +111,9 @@ submitHandler = async(e) => {
 }
 
 export default MoviePicker
+
+
+MoviePicker.propTypes = {
+  checkAnswer: PropTypes.func,
+  setGuessed: PropTypes.func
+}
