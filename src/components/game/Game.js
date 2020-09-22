@@ -11,7 +11,9 @@ class Game extends React.Component {
     super(props);
     this.state = {
       allPlanets: [],
-      currentPlanet : []
+      currentPlanet : [],
+      error: '',
+      valid: true
     }
   }
 
@@ -47,8 +49,10 @@ class Game extends React.Component {
     let allData2 = []
     await getAllPlanets()
       .then(data => allData1 = data.results)
+      .catch(err => this.setState({valid: false, error: err}))
     await getSecondSet()
       .then(newData => allData2 = newData.results)
+      .catch(err => this.setState({valid: false, error: err}))
     let combined = allData1.concat(allData2)
     this.setState({allPlanets: combined})
     this.newRound()
@@ -70,7 +74,9 @@ class Game extends React.Component {
         {this.showCurrentPlanet()}
       </div>
         {this.props.finalAnswer === true && <div className='answer-text'><h2 className="answer">CORRECT!</h2><button onClick={this.setNext} className="next-question">NEXT</button></div>}
-        {this.props.finalAnswer === false && <div className='answer-text'><h2 className="answer">Incorrect!</h2><button onClick={this.setNext} className="next-question">NEXT</button></div>} 
+        {this.props.finalAnswer === false && <div className='answer-text'><h2 className="answer">Incorrect!</h2><button onClick={this.setNext} className="next-question">NEXT</button></div>}
+        {!this.state.valid && <h2>{this.state.error}</h2>} 
+
       <div className="choice-side">
         <ScoreBoard
         score={this.props.score}
