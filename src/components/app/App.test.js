@@ -4,7 +4,7 @@ import '@testing-library/jest-dom'
 import {BrowserRouter} from 'react-router-dom'
 import App from './App.js'
 import {getAllPlanets, getSecondSet} from '../../FetchCalls.js'
-import {mockPlanets, singlePlanet, mockFetch, mockFetch2} from '../../MockData.js'
+import {mockFetch, mockFetch2} from '../../MockData.js'
 jest.mock('../../FetchCalls.js')
 
 describe('App', () => {
@@ -30,7 +30,7 @@ describe('App', () => {
     const warning = screen.getByText('Padawan, you need to enter a Name!')
     expect(warning).toBeInTheDocument()
   })
-  it('should allow user to proceed to the game when a name is entered, press submit receive an incorrect message and then navigate to the high scores page!', async() => {
+  it('should allow user to proceed to the game when a name is entered, press submit, receive an incorrect message and then navigate to the high scores page!', async() => {
     getAllPlanets.mockResolvedValue(mockFetch)
     getSecondSet.mockResolvedValue(mockFetch2)
     render(<BrowserRouter><App /></BrowserRouter>)

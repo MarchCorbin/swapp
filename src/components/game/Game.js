@@ -15,7 +15,6 @@ class Game extends React.Component {
     }
   }
 
-
   newRound = async() => {
     let max = this.state.allPlanets.length
     let randomInt = Math.random() * (max) ;
@@ -24,9 +23,6 @@ class Game extends React.Component {
     })
      await this.props.setCurrentPlanet(this.state.currentPlanet)
   }
-
-
- 
 
   showCurrentPlanet = () => {
     let planet = this.state.currentPlanet
@@ -46,8 +42,6 @@ class Game extends React.Component {
     )
   }
 
-
-
   componentDidMount = async() => {
     let allData1 = []
     let allData2 = []
@@ -65,13 +59,12 @@ class Game extends React.Component {
    this.newRound()
  }
  
-
   render() {
   return (
     <>
       <Header
-          presentDirections={this.props.presentDirections} 
-          username={this.props.username} />
+        presentDirections={this.props.presentDirections} 
+        username={this.props.username} />
     <div className="game-page">
       <div className="planet-side">
         {this.showCurrentPlanet()}

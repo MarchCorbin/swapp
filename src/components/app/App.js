@@ -80,7 +80,6 @@ class App extends React.Component {
   }
 
   saveState = () => {
-    console.log('WEMADEIT')
     let keyVal = localStorage.length + 1
     let currentStats = {
      user: this.state.currentUser,
@@ -98,7 +97,7 @@ class App extends React.Component {
     e.target.classList.remove('active')
     textSlot.classList.remove('active-text')
   }
- e.target.classList.contains('active') ? textSlot.innerText = 'Instructions: This is a test of your memory! \n  Rules: You will be presented with a series of Star Wars planets. You must select ALL of the movies that this planet was shown in. Be careful some of these planets arent in ANY of the movies, in this case just clear your answers and hit Submit. Good Luck!' : textSlot.innerText = ''
+    e.target.classList.contains('active') ? textSlot.innerText = 'Instructions: This is a test of your memory! \n  Rules: You will be presented with a series of Star Wars planets. You must select ALL of the movies that this planet was shown in. Be careful some of these planets arent in ANY of the movies, in this case just clear your answers and hit Submit. Good Luck!' : textSlot.innerText = ''
   }
 
   render() {

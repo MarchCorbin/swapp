@@ -4,8 +4,6 @@ import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types';
 
 function Header(props){
-  let directions = document.querySelector('.directional-text')
-  let instructionbtn = document.querySelector('.instructions-btn')
 return ( 
 <div className="header">
   <button alt='instructions btn' onClick={props.presentDirections} className="instructions-btn">?</button>
