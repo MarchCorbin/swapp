@@ -67,6 +67,5 @@ describe('App', () => {
     const scoresmessage = screen.getByText('High Scores:')
     expect(newgamebtn).toBeInTheDocument()
     expect(scoresmessage).toBeInTheDocument()
-    
   })
 })
